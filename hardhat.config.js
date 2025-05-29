@@ -1,7 +1,7 @@
-require("dotenv").config()
-require("@nomicfoundation/hardhat-toolbox")
+require("dotenv").config();
+require("@nomicfoundation/hardhat-toolbox");
 
-const privateKey = process.env.PRIVATE_KEY || ""
+const privateKey = process.env.PRIVATE_KEY || "";
 
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
@@ -10,8 +10,8 @@ module.exports = {
     hardhat: {
       forking: {
         url: `https://base-mainnet.g.alchemy.com/v2/${process.env.ALCHEMY_API_KEY}`,
-        blockNumber: process.env.FORK_BLOCK_NUMBER === "true" ? 18343040 : undefined
-      },
+        blockNumber: 18343040 // Optional, use a recent stable block
+      }
     }
   }
 };

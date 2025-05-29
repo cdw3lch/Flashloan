@@ -7,10 +7,10 @@
   },
   "devDependencies": {
     "@balancer-labs/v2-interfaces": "0.4.0",
-    "@nomicfoundation/hardhat-toolbox": "5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "@openzeppelin/contracts": "^4.9.2",
-    "dotenv": "16.0.3",
-    "ethers": "^6.13.5",
+    "dotenv": "^16.0.3",
+    "ethers": "^5.8.0",
     "hardhat": "^2.22.18"
   }
 }
